@@ -1,0 +1,92 @@
+// ========================================| Partial |
+@import "variables";
+// ========================================| Layout |============================================
+// ========================================/ header
+.header{
+    width: 100%;
+    background:linear-gradient(to right ,$color-secondary-light,$color-secondary-lightest,#e0ecf8,$color-secondary-lightest,$color-secondary-light);
+    border-radius:0px 0px 15px 15px;
+    box-shadow: 0px 0px 40px $color-primary-lightest inset;
+    & > .middle{
+        // display: flex;
+        display: grid;
+        grid-template-columns: 500px 0.8fr;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            display: flex;
+            &-img{
+                width: 110px;
+                margin: 10px;
+                border: 1px solid $color-primary-lightest;
+                box-shadow: 0px 0px 30px $color-primary-lightest;
+                border-radius: $radius-md;
+                cursor: pointer;
+                transition: 0.5s ease;
+                &:hover{
+                    transform: scale(1.029 ,1.029);
+                    border: 1.5px solid $color-primary-light;
+                    box-shadow: 0px 0px 40px $color-primary-light;
+                }
+            }
+            &-introduction{
+                align-self: center;
+                padding: 5px;
+                text-align: center;
+                &-name{
+                    font-family: "font-harabara";
+                    color: $color-secondary-darkest;
+                    font-size: $font-2xl;
+                }
+                &-profession{
+                    color: $color-secondary-dark;
+                    font-size: $font-xl;
+                }
+            }
+        }
+        .menu{
+            // background-color: orange;
+            &-list{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            &-item{
+                font-weight: bold;
+            }
+            &-link{
+                padding:10px 15px;
+                color: $color-secondary-dark;
+                border-radius: $radius-md;
+                box-shadow: 0px 0px 5px $color-border-light;
+                transition: 0.5s ease;
+                position: relative;
+                &:hover{
+                    transform: scale(1.04 ,1.04);
+                    box-shadow: 0px 0px 20px $color-border-light;
+                }
+                &::after{
+                    content: "";
+                    margin: 10px 0px;
+                    width: 0%;
+                    height: 2px;
+                    background-color: $color-secondary-dark;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50% , 0%);
+                    transition: 0.5s ease;
+                    border-radius: $radius-circle;
+                }
+                &:hover::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.middle{
+    max-width: 1450px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
