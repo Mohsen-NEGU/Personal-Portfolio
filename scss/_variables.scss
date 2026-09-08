@@ -1,12 +1,126 @@
-// ========================================| Colors  |
-// $color-primary-lightest: #00b392;
-// $color-primary-light: #008e74;
-// $color-primary: #007e67;
-// $color-primary-dark: #006654;
-// $color-primary-darkest: #004135;
+// ======================================| Variables |========================================
+// ========================================/ Color 
+$color-primary-lightest: #ffffff;
+$color-primary-light: #fcfcfc;
+$color-primary: #f9f9f9;
+$color-primary-dark: #d1d3d5;
+$color-primary-darkest: #bebec0;
 
-// $color-secondary-lightest: #ffc800;
-// $color-secondary-light: #e1b100;
-// $color-secondary: #d0a300;
-// $color-secondary-dark: #8c6d00;
-// $color-secondary-darkest: #695200;
+$color-secondary-lightest: #d9e3ee;
+$color-secondary-light: #8ea9c6;
+$color-secondary: #3c5c83;
+$color-secondary-dark: #1d3858;
+$color-secondary-darkest: #0d233d;
+// ========================================/ General Color
+$color-blue-lightest: #5353fe;
+$color-blue-light: #2c2cff;
+$color-blue: #0000ff;
+$color-blue-dark: #0101b4;
+$color-blue-darkest: #00005b;
+
+$color-black-lightest: #505050;
+$color-black-light: #3e3e3e;
+$color-black: #1f1f1f;
+$color-black-dark: #171717;
+$color-black-darkest: #000000;
+
+$color-orange-lightest: #ffc760;
+$color-orange-light: #fdb632;
+$color-orange: #ffa500;
+$color-orange-dark: #c17e01;
+$color-orange-darkest: #7d5201;
+
+$color-green-lightest: #02e102;
+$color-green-light: #00b400;
+$color-green: #008000;
+$color-green-dark: #004400;
+$color-green-darkest: #002b00;
+
+$color-red-lightest: #ff6767;
+$color-red-light: #ff3737;
+$color-red: #ff0000;
+$color-red-dark: #bf0101;
+$color-red-darkest: #880000;
+
+$color-purple-lightest: #ff00ff;
+$color-purple-light: #bb00bb;
+$color-purple: #800080;
+$color-purple-dark: #600060;
+$color-purple-darkest: #3d003d;
+// ========================================/ Completely Color
+$color-border-lightest: #b0d6ff;
+$color-border-light: #9abce1;
+$color-border: #8caaca;
+$color-border-dark: #7a93ae;
+$color-border-darkest: #61758a;
+
+// $color-shadow-lightest: #b0d6ff;
+// $color-shadow-light: #9abce1;
+// $color-shadow: #8caaca;
+// $color-shadow-dark: #7a93ae;
+// $color-shadow-darkest: #61758a;
+// ========================================/ Border Raduse
+$radius-xs: 6px;
+$radius-sm: 12px;
+$radius-md: 18px;
+$radius-lg: 24px;
+$radius-xl: 30px;
+$radius-2xl: 36px;
+$radius-3xl: 42px;
+$radius-circle: 50%;
+// ========================================/ Font Size
+$font-xs: 11px;
+$font-sm: 12px;
+$font-md: 14px;
+$font-lg: 16px;
+$font-xl: 18px;
+$font-2xl: 22px;
+$font-3xl: 28px;
+
+$h1-lg: 45px;
+$h1-md: 37.5px;
+$h1-sm: 30px;
+
+$h2-lg: 40px;
+$h2-md: 32.5px;
+$h2-sm: 25px;
+
+$h3-lg: 32px;
+$h3-md: 26px;
+$h3-sm: 20px;
+// ======================================| Fonts |========================================
+// Used for animation of <span>
+@font-face{
+    font-family: "font-dameron";
+    src: url("../fonts/dameron/dameron.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+// Used for improtant title <span> or <h1,h2,h3>
+@font-face{
+    font-family: "font-dameron-acad";
+    src: url("../fonts/dameron/dameronacad.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+// Used for improtant title at hero or (sub-title at navbar behind of name-site)
+@font-face{
+    font-family: "font-harabara";
+    src: url("../fonts/harabara/Harabara.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+// Used for all text in site
+@font-face{
+    font-family: "font-soft-elegance";
+    src: url("../fonts/soft-elegance/Soft\ Elegance.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+// Used for all h1,h2,h3 in site
+@font-face{
+    font-family: "font-obveron";
+    src: url("../fonts/obveron/ObveronFont/ObveronFont.ttf");
+    font-weight: normal;
+    font-style: normal;
+}

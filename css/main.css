@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "font-dameron";
+  src: url("../fonts/dameron/dameron.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font-dameron-acad";
+  src: url("../fonts/dameron/dameronacad.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font-harabara";
+  src: url("../fonts/harabara/Harabara.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font-soft-elegance";
+  src: url("../fonts/soft-elegance/Soft Elegance.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "font-obveron";
+  src: url("../fonts/obveron/ObveronFont/ObveronFont.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 *,
 *::after,
 *::before {
