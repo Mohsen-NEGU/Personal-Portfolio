@@ -313,6 +313,11 @@ h1, h2, h3 {
   width: 500px;
   height: 500px;
   background: conic-gradient(transparent, transparent, transparent, #0101b4);
+  transform: rotate(0deg);
+  animation: rotate-border 10s linear infinite;
+}
+.about-img::after {
+  animation-delay: -5s;
 }
 .about-info {
   display: flex;
@@ -439,6 +444,11 @@ h1, h2, h3 {
   }
   70%, 90% {
     width: 100%;
+  }
+}
+@keyframes rotate-border {
+  100% {
+    transform: rotate(360deg);
   }
 }
 
