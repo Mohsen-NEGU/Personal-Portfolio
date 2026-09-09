@@ -5,7 +5,7 @@
 
 
 .hero{
-    min-height: 550px;
+    min-height: 86vh;
     background: url(../images/hero-1.png) no-repeat center center / cover fixed ;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -65,13 +65,19 @@
     }
 }
 .about{
-    padding: 70px 8% 0;
+    padding: 50px 8%;
     // color: orangered;
-    background: $color-primary-lightest;
+    // background: blue;
+    // background: $color-primary-lightest;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.6s;
     & > .middle{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         align-items: center;
+        
     }
     &-img{
         padding: 7px;
@@ -85,6 +91,7 @@
         align-items: center;
         overflow: hidden;
         box-shadow: 0px 0px 2px $color-blue-lightest inset;
+        
         &-box{
             position: relative;
             width: 100%;
@@ -115,6 +122,7 @@
         display: flex;
         flex-direction: column;
         align-items: start;
+        
     }
     &-sub-title{
         font-family: "font-harabara";
@@ -175,5 +183,32 @@
                 }
             }
         }
+    }
+}
+.bars-animation{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    z-index: -1;
+    .bar{
+        width: 100%;
+        height: 100%;
+        background-color: $color-primary-lightest;
+        // border: 2px solid white;
+        transform: translateY(-100%);
+        animation: show-bars 1.5s ease-in-out forwards;
+        animation-delay: calc(0.1s * var(--i));
+    }
+}
+@keyframes show-bars{
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes show-content{
+    100%{
+        visibility: visible;
+        opacity: 1;
     }
 }
