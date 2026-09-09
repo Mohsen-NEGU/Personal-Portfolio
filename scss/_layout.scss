@@ -19,14 +19,14 @@
                 width: 110px;
                 margin: 10px;
                 border: 1px solid $color-primary-lightest;
-                box-shadow: 0px 0px 30px $color-primary-lightest;
+                box-shadow: 0px 0px 15px $color-primary-lightest;
                 border-radius: $radius-md;
                 cursor: pointer;
                 transition: 0.5s ease;
                 &:hover{
                     transform: scale(1.029 ,1.029);
                     border: 1.5px solid $color-primary-light;
-                    box-shadow: 0px 0px 40px $color-primary-light;
+                    box-shadow: 0px 0px 35px $color-primary-light;
                 }
             }
             &-introduction{
