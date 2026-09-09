@@ -115,7 +115,7 @@
             position: absolute;
             width: 500px;
             height: 500px;
-            background: conic-gradient(transparent,transparent,transparent,$color-blue);
+            background: conic-gradient(transparent,transparent,transparent,$color-blue-dark);
         }
     }
     &-info{
@@ -134,9 +134,30 @@
         color: $color-secondary-darkest;
     }
     &-wrapper{
-        font-family: "font-dameron";
+        display: inline-block;
+        font-family: "font-harabara";
         font-size: $h3-lg;
         color: $color-secondary-dark;
+        span{
+            position: relative;
+            font-family: "font-obveron";
+            display: inline-block;
+            color: transparent;
+            -webkit-text-stroke: 0.3px $color-blue-darkest;
+            text-shadow: 0px 0px 5px $color-primary-lightest;
+            animation: display-span 16s linear infinite;
+            animation-delay: calc(-4s * var(--s));
+            &::before{
+                content: attr(data-span);
+                position: absolute;
+                width: 0;
+                border-right: 2px solid $color-blue-dark;
+                color: $color-blue-dark;
+                white-space: nowrap;
+                overflow: hidden;
+                animation: fill-span 4s linear infinite;
+            }
+        }
     }
     &-description{
         padding-block: 5px;
@@ -210,5 +231,21 @@
     100%{
         visibility: visible;
         opacity: 1;
+    }
+}
+@keyframes display-span{
+    25%,
+    100%{
+        display: none;
+    }
+}
+@keyframes fill-span{
+    10%,
+    100%{
+        width: 0;
+    }
+    70%,
+    90%{
+        width: 100%;
     }
 }
