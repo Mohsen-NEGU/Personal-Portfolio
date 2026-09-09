@@ -274,7 +274,7 @@ h1, h2, h3 {
   align-items: center;
 }
 .about-img {
-  padding: 5px;
+  padding: 7px;
   position: relative;
   justify-self: end;
   width: 32vw;
@@ -284,14 +284,14 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  box-shadow: 0px 0px 2px #5353fe;
+  box-shadow: 0px 0px 2px #5353fe inset;
 }
 .about-img-box {
   position: relative;
   width: 100%;
   height: 100%;
-  background: blue;
   border-radius: 50%;
+  border: 3px solid #ffffff;
   overflow: hidden;
   z-index: 1;
 }
@@ -302,13 +302,14 @@ h1, h2, h3 {
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
+  mix-blend-mode: lighten;
 }
 .about-img::before, .about-img::after {
   content: "";
   position: absolute;
   width: 500px;
   height: 500px;
-  background: conic-gradient(transparent, transparent, transparent, #0101b4);
+  background: conic-gradient(transparent, transparent, transparent, #0000ff);
 }
 .about-info {
   display: flex;
@@ -371,7 +372,7 @@ h1, h2, h3 {
 }
 .about-btn-sic .sic:hover, .about-btn .sic .sic:hover {
   background-color: #0101b4;
-  text-shadow: 0px 0px 5px #f9f9f9;
+  text-shadow: 0px 0px 3px #f9f9f9;
   border: 2px solid #0000ff;
   color: #ffffff;
 }
