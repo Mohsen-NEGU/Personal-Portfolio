@@ -66,6 +66,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "font-soft-elegance";
   background-color: #f9f9f9;
