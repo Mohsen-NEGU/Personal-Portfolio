@@ -434,7 +434,7 @@ h1, h2, h3 {
 .skill-title {
   width: 100%;
   display: inline-block;
-  padding: 10px 5px;
+  padding: 25px 5px 20px 5px;
   margin: 0 auto;
   text-align: center;
   font-size: 26px;
@@ -444,6 +444,8 @@ h1, h2, h3 {
 .skill .middle {
   display: grid;
   grid-template-columns: 350px 1fr;
+  grid-template-rows: 1fr;
+  padding-bottom: 50px;
 }
 .skill-wrapper {
   margin-right: 20px;
@@ -491,6 +493,7 @@ h1, h2, h3 {
   border-radius: 24px;
   border: 1px solid #f9f9f9;
   background: #0d233d;
+  box-shadow: 0px 0px 10px #ffffff;
 }
 .skill-info .skill-box .skill-direct {
   padding: 7px;
