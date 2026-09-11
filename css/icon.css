@@ -75,38 +75,38 @@
 }
 .icon-angular:before {
   content: "\e903";
-  color: #dd0031;
+  /* color: #dd0031; */
 }
 .icon-vue-dot-js:before {
   content: "\e904";
-  color: #4fc08d;
+  /* color: #4fc08d; */
 }
 .icon-react:before {
   content: "\e906";
-  color: #61dafb;
+  /* color: #61dafb; */
 }
 .icon-sass:before {
   content: "\e907";
-  color: #c69;
+  /* color: #c69; */
 }
 .icon-node-dot-js:before {
   content: "\e908";
-  color: #393;
+  /* color: #393; */
 }
 .icon-django:before {
   content: "\e909";
 }
 .icon-python:before {
   content: "\e90a";
-  color: #3776ab;
+  /* color: #3776ab; */
 }
 .icon-javascript:before {
   content: "\e90b";
-  color: #f7df1e;
+  /* color: #f7df1e;*/
 }
 .icon-java:before {
   content: "\e90c";
-  color: #007396;
+  /* color: #007396; */
 }
 .icon-graduation-cap:before {
   content: "\e90d";
