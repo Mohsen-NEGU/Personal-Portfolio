@@ -207,6 +207,21 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
+.skill-wrapper .skill-img button, .about-btn-link, .hero-link {
+  background-color: #0d233d;
+  border: 1px solid #f9f9f9;
+  border-radius: 12px;
+  color: #ffffff;
+  transition: 0.5s ease;
+  box-shadow: 0px 0px 5px #0000ff;
+}
+
+.skill-wrapper .skill-img button:hover, .about-btn-link:hover, .hero-link:hover {
+  text-shadow: 0px 0px 10px #ffffff;
+  background-color: #1d3858;
+  box-shadow: 0px 0px 10px #5353fe;
+}
+
 .hero {
   min-height: 86vh;
   background: url(../images/hero-1.png) no-repeat center center/cover fixed;
@@ -257,19 +272,7 @@ h1, h2, h3 {
 }
 .hero-link {
   padding: 10px 20px;
-  background-color: #0d233d;
-  border: 1px solid #f9f9f9;
-  border-radius: 12px;
-  color: #ffffff;
-  transition: 0.5s ease;
-  box-shadow: 0px 0px 5px #0000ff;
 }
-.hero-link:hover {
-  text-shadow: 0px 0px 10px #ffffff;
-  background-color: #1d3858;
-  box-shadow: 0px 0px 10px #5353fe;
-}
-
 .about {
   padding: 50px 8%;
   visibility: hidden;
@@ -377,20 +380,11 @@ h1, h2, h3 {
 }
 .about-btn-link {
   padding: 10px 30px;
-  background-color: #0d233d;
-  color: #f9f9f9;
-  border-radius: 12px;
   text-shadow: 0px 0px 5px #ffffff;
-  border: 1px solid #ffffff;
-  box-shadow: 0px 0px 5px #0000ff;
   font-size: 18px;
-  transition: 0.5s ease;
 }
 .about-btn-link:hover {
   transform: scale(1.03, 1.03);
-  text-shadow: 0px 0px 10px #ffffff;
-  box-shadow: 0px 0px 10px #5353fe;
-  background-color: #1d3858;
 }
 .about-btn-sic, .about-btn .sic {
   margin-left: 20px;
@@ -464,9 +458,37 @@ h1, h2, h3 {
   border-radius: 24px;
   box-shadow: 0px 0px 15px #ffffff;
 }
+.skill-wrapper .skill-img-title {
+  padding: 5px 10px;
+  font-size: 22px;
+  color: #fcfcfc;
+  text-shadow: 0px 0px 40px #0101b4;
+}
 .skill-wrapper .skill-img img {
   width: 300px;
   border-radius: 24px;
+}
+.skill-wrapper .skill-img .analysis {
+  position: absolute;
+  top: 45%;
+  font-size: 18px;
+  padding: 0 15px;
+}
+.skill-wrapper .skill-img .analysis-describtion {
+  color: #d9e3ee;
+}
+.skill-wrapper .skill-img .analysis-describtion i {
+  font-size: 22px;
+  color: #0d233d;
+  text-shadow: 0px 0px 5px #ffffff;
+}
+.skill-wrapper .skill-img button {
+  position: absolute;
+  top: 75%;
+  left: 54%;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 16px;
 }
 .skill-info {
   padding: 15px 20px;
