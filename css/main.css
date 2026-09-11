@@ -262,10 +262,12 @@ h1, h2, h3 {
   border-radius: 12px;
   color: #ffffff;
   transition: 0.5s ease;
+  box-shadow: 0px 0px 5px #0000ff;
 }
 .hero-link:hover {
   text-shadow: 0px 0px 10px #ffffff;
   background-color: #1d3858;
+  box-shadow: 0px 0px 10px #5353fe;
 }
 
 .about {
