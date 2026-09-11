@@ -431,7 +431,7 @@ h1, h2, h3 {
   padding: 25px 5px 20px 5px;
   margin: 0 auto;
   text-align: center;
-  font-size: 26px;
+  font-size: 32px;
   color: #8ea9c6;
   text-shadow: 0px 0px 2px #3c5c83;
 }
@@ -558,6 +558,83 @@ h1, h2, h3 {
   margin: 0 10px;
   background: #d9e3ee;
   transform: scaleY(1.03) scaleX(1.03);
+}
+
+.project {
+  background: #ffffff;
+}
+.project-title {
+  padding: 20px 10px;
+  font-size: 32px;
+  color: #3c5c83;
+  text-align: center;
+}
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 24px;
+}
+.project-item {
+  width: 342px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  background: #1d3858;
+  color: #ffffff;
+  border-radius: 24px;
+}
+.project-item iframe {
+  width: 1200px;
+  height: 700px;
+  border: none;
+  border-bottom: 5px solid #ffffff;
+  transform: scale(0.2857);
+  transform-origin: top left;
+  border-radius: 42px 42px 0 0;
+}
+.project-item a {
+  padding: 2px 7px;
+  position: absolute;
+  top: 92%;
+  left: 65%;
+  font-size: 12px;
+  font-family: "font-harabara";
+  background: rgba(154, 182, 213, 0.3490196078);
+  color: #ffffff;
+  border-radius: 36px;
+  text-shadow: 0px 0px 3px #5353fe;
+  box-shadow: 0px 0px 5px #5353fe;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.project-item a:hover {
+  color: #8ea9c6;
+}
+.project-name {
+  padding: 2px 7px;
+  display: inline-block;
+  background-color: rgba(154, 182, 213, 0.3490196078);
+  border-radius: 36px;
+  text-shadow: 0px 0px 3px #5353fe;
+  box-shadow: 0px 0px 5px #5353fe;
+  position: absolute;
+  top: 71%;
+  left: 80%;
+  transform: translate(-100%, 0);
+  font-size: 12px;
+}
+.project-info {
+  padding: 0 5px;
+  position: absolute;
+  top: 70%;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.project-description {
+  padding: 0 5px;
+  position: absolute;
+  top: 80%;
+  font-size: 12px;
 }
 
 @keyframes show-bars {

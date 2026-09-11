@@ -239,7 +239,7 @@
         padding: 25px 5px 20px 5px;
         margin: 0 auto;
         text-align: center;
-        font-size: $h3-md;
+        font-size: $h3-lg;
         color: $color-secondary-light;
         text-shadow: 0px 0px 2px $color-secondary;
     }
@@ -372,6 +372,83 @@
                 }
             }
         }
+    }
+}
+// ============================================/ project
+.project{
+    background: $color-primary-lightest;
+    &-title{
+        padding: 20px 10px;
+        font-size: $h3-lg;
+        color: $color-secondary;
+        text-align: center;
+    }
+    &-list{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        border-radius: $radius-lg;
+    }
+    &-item{
+        width: 342px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        background: $color-secondary-dark;
+        color: $color-primary-lightest;
+        border-radius: $radius-lg;
+        iframe{
+            width: 1200px;
+            height: 700px;
+            border: none;
+            border-bottom: 5px solid $color-primary-lightest;
+            transform: scale(0.2857);
+            transform-origin: top  left;
+            border-radius: $radius-3xl $radius-3xl 0 0;
+        }
+        a{
+            padding: 2px 7px;
+            position: absolute;
+            top: 92%;
+            left: 65%;
+            font-size: $font-sm;
+            font-family: "font-harabara";
+            background: $color-glass-bg;
+            color: $color-primary-lightest;
+            border-radius: $radius-2xl;
+            text-shadow: 0px 0px 3px $color-blue-lightest;
+            box-shadow: 0px 0px 5px $color-blue-lightest;
+            transition: 0.5s ease;
+            cursor: pointer;
+            &:hover{
+                color: $color-secondary-light;
+            }
+        }
+    }
+    &-name{
+        padding: 2px 7px;
+        display: inline-block;
+        background-color: $color-glass-bg;
+        border-radius: $radius-2xl;
+        text-shadow: 0px 0px 3px $color-blue-lightest;
+        box-shadow: 0px 0px 5px $color-blue-lightest;
+        position: absolute;
+        top: 71%;
+        left: 80%;
+        transform: translate(-100% , 0);
+        font-size: $font-sm;
+    }
+    &-info{
+        padding: 0 5px;
+        position: absolute;
+        top: 70%;
+        font-size: $h4-lg;
+        letter-spacing: 1px;
+    }
+    &-description{
+        padding: 0 5px;
+        position: absolute;
+        top: 80%;
+        font-size: $font-sm;
     }
 }
 // ==================================| animations Keyframes |=========================================
