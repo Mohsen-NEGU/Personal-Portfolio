@@ -377,11 +377,14 @@
 // ============================================/ project
 .project{
     background: $color-primary-lightest;
+    // height: 500px;
+    padding: 60px 0;
     &-title{
-        padding: 20px 10px;
+        padding: 10px 10px;
         font-size: $h3-lg;
         color: $color-secondary;
         text-align: center;
+        transform: translate(0 ,-30px);
     }
     &-list{
         display: grid;

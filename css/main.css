@@ -562,12 +562,14 @@ h1, h2, h3 {
 
 .project {
   background: #ffffff;
+  padding: 60px 0;
 }
 .project-title {
-  padding: 20px 10px;
+  padding: 10px 10px;
   font-size: 32px;
   color: #3c5c83;
   text-align: center;
+  transform: translate(0, -30px);
 }
 .project-list {
   display: grid;
