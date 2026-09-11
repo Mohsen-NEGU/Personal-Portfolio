@@ -441,6 +441,30 @@ h1, h2, h3 {
   color: #8ea9c6;
   text-shadow: 0px 0px 2px #3c5c83;
 }
+.skill .middle {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+}
+.skill-wrapper {
+  margin-right: 20px;
+  position: relative;
+  background: rgba(154, 182, 213, 0.3490196078);
+  border-radius: 24px;
+  box-shadow: 0px 0px 15px #8ea9c6;
+}
+.skill-wrapper .skill-img {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  margin-right: 20px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 15px #ffffff;
+}
+.skill-wrapper .skill-img img {
+  width: 300px;
+  border-radius: 24px;
+}
 
 @keyframes show-bars {
   100% {

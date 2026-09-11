@@ -243,6 +243,33 @@
         color: $color-secondary-light;
         text-shadow: 0px 0px 2px $color-secondary;
     }
+    .middle{
+        // padding: 0px 6%;
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        // grid-template-rows: 1fr;
+        // align-items: center;
+    }
+    &-wrapper{
+        margin-right: 20px;
+        position: relative;
+        background: $color-glass-bg;
+        border-radius: $radius-lg;
+        box-shadow: 0px 0px 15px $color-secondary-light;
+        .skill-img{
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, 5%);
+            margin-right: 20px;
+            border-radius: $radius-lg;
+            box-shadow: 0px 0px 15px $color-primary-lightest;
+            img{
+                width: 300px;
+                border-radius: $radius-lg;
+            }
+        }
+    }
 }
 // ==================================| animations Keyframes |=========================================
 @keyframes show-bars{
