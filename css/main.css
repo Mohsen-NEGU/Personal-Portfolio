@@ -124,7 +124,6 @@ h1, h2, h3 {
 .header {
   width: 100%;
   background: linear-gradient(to right, #8ea9c6, #d9e3ee, #e0ecf8, #d9e3ee, #8ea9c6);
-  border-radius: 0px 0px 15px 15px;
   box-shadow: 0px 0px 40px #ffffff inset;
 }
 .header > .middle {
@@ -176,13 +175,12 @@ h1, h2, h3 {
   padding: 10px 15px;
   color: #1d3858;
   border-radius: 18px;
-  box-shadow: 0px 0px 5px #a0c0e2;
   transition: 0.5s ease;
   position: relative;
 }
 .header > .middle .menu-link:hover {
   transform: scale(1.04, 1.04);
-  box-shadow: 0px 0px 20px #a0c0e2;
+  box-shadow: 0px 0px 30px #b0d6ff;
 }
 .header > .middle .menu-link::after {
   content: "";
@@ -269,6 +267,8 @@ h1, h2, h3 {
 .hero-description {
   padding-block: 20px;
   font-size: 18px;
+  color: #ffffff;
+  text-shadow: 0px 0px 2px #0d233d;
 }
 .hero-link {
   padding: 10px 20px;
