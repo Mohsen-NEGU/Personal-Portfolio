@@ -365,15 +365,25 @@
                 font-size: $font-xl;
             }
         }
-        // ===========================================/ hexagons
-        .skill-box{
+        .skill-form{
             height: 480px;
-            position: relative;
-            padding: 20px 20px;
             border-radius: $radius-lg;
             border: 1px solid $color-primary;
             background: $color-secondary-darkest;
             box-shadow: 0px 0px 10px $color-primary-lightest;
+            display: grid;
+            grid-template-columns: 480px 1fr;
+            grid-template-rows: 255px 240px;
+            .skill-description{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+        }
+        // ===========================================/ hexagons
+        .skill-box{  
+            position: relative;
+            padding: 20px 20px;
+            border-bottom: 2px solid $color-secondary-lightest;
             .skill-hexagon{
                 @extend %hexagon;
                 padding: 35px;
