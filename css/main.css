@@ -592,9 +592,6 @@ h1, h2, h3 {
   left: 230px;
   transform: translate(-2px, 0px);
 }
-.skill-info .skill-box .skill-hexagon:nth-child(5):hover {
-  transform: translate(2%, -5%) scale(1.17, 1.17);
-}
 .skill-info .skill-box .skill-hexagon:nth-child(6) {
   position: absolute;
   top: 90px;
@@ -611,9 +608,6 @@ h1, h2, h3 {
   left: 20px;
   transform: translate(-1px, -1px);
 }
-.skill-info .skill-box .skill-hexagon:nth-child(7):hover {
-  transform: translate(2%, -5%) scale(1.17, 1.17);
-}
 .skill-info .skill-box .skill-hexagon:nth-child(8) {
   position: absolute;
   top: 90px;
@@ -629,9 +623,6 @@ h1, h2, h3 {
   top: 125px;
   left: 175px;
   transform: translate(1.7px, -1px);
-}
-.skill-info .skill-box .skill-hexagon:nth-child(9):hover {
-  transform: translate(2%, -5%) scale(1.17, 1.17);
 }
 .skill-info .skill-box .skill-hexagon:nth-child(10) {
   position: absolute;
@@ -657,9 +648,6 @@ h1, h2, h3 {
   top: 160px;
   left: 125px;
   transform: translate(-1px, -2px);
-}
-.skill-info .skill-box .skill-hexagon:nth-child(12):hover {
-  transform: translate(2%, -5%) scale(1.17, 1.17);
 }
 .skill-info .skill-box .skill-hexagon:nth-child(13) {
   position: absolute;
@@ -695,18 +683,12 @@ h1, h2, h3 {
   left: 335px;
   transform: translate(-2px, 0px);
 }
-.skill-info .skill-box .skill-hexagon:nth-child(16):hover {
-  transform: translate(2%, -5%) scale(1.17, 1.17);
-}
 .skill-info .skill-box .skill-hexagon:nth-child(17) {
   background: rgba(154, 181, 213, 0.2078431373);
   position: absolute;
   top: 160px;
   left: 335px;
   transform: translate(-1.5px, -1.3px);
-}
-.skill-info .skill-box .skill-hexagon:nth-child(17):hover {
-  transform: translate(2%, -5%) scale(1.17, 1.17);
 }
 .skill-info .skill-box .skill-hexagon:nth-child(18) {
   position: absolute;
