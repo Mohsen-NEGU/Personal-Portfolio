@@ -17,15 +17,46 @@
     background-color: $color-secondary-dark;
     box-shadow: 0px 0px 10px $color-blue-lightest;
 }
+%shap-style{
+    padding: 3px;
+    position: relative;
+    border-radius: $radius-circle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px $color-secondary inset;
+}
+%shap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: $radius-circle;
+    overflow: hidden;
+    z-index: 1;
+}
+%persent{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    mix-blend-mode: lighten;
+    font-size: $font-2xl;
+}
+%after-before{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
 %hexagon{
     /* Clip-Path Shape */
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    // clip-path: polygon(27% 0%, 73% 0%, 100% 48%, 100% 52%, 73% 100%, 27% 100%, 0% 52%, 0% 48%);
-    // clip-path: polygon(28% 0%, 72% 0%, 76% 3%, 100% 47%, 100% 53%, 76% 97%, 72% 100%, 28% 100%, 24% 97%,0% 53%, 0% 47%,24% 3%);
     background: radial-gradient(transparent 30%,$color-glass-hexagon 70%);
-    // border: 1px solid white;
     box-shadow: 0px 0px 10px $color-primary-lightest inset;
-    // filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.36));
 }
 %hexagon-2{
     .hexgon{
@@ -400,7 +431,7 @@
                 dd{
                     text-align: center;
                     font-size: $font-md;
-                    color:$color-secondary-light;
+                    color:$color-primary-lightest;
                     text-shadow: 0px 0px 20px $color-secondary-lightest;
                 }
             }
@@ -408,23 +439,131 @@
                 grid-column: 2/3;
                 grid-row: 1/3;
                 display: grid;
-                grid-template-columns: 0.5fr 1fr;
+                grid-template-columns: 0.7fr 1fr;
                 grid-template-rows: repeat(3 , 1fr);
                 .backend{
+                    // place ↓
                     grid-column: 1/2;
                     grid-row: 1/2;
+                    align-self: center;
+                    justify-self: left;
+                    margin: 0 40px;
+                    // inside ↓
+                    @extend %shap-style;
+                    width: 7vw;
+                    height: 7vw;
+                    background-color: $color-secondary-lightest;
+                    &-shap{
+                        @extend %shap;
+                        border: 10px solid $color-secondary-darkest;
+                    }
+                    &-persent{
+                        @extend %persent;
+                        padding: 100px;
+                        color: $color-secondary-darkest;
+                        background-color: $color-secondary-lightest;
+                    }
+                    &::before,&::after{
+                        content: "";
+                        @extend %after-before;
+                        background: conic-gradient(transparent,transparent,transparent,$color-secondary);
+                    }
+                    &::after{
+                        animation-delay: -5s;
+                    }
                 }
                 .frontend{
+                    // place ↓
                     grid-column: 1/2;
                     grid-row: 2/3;
+                    align-self: center;
+                    justify-self: left;
+                    margin: 0 40px;
+                    // inside ↓
+                    @extend %shap-style;
+                    width: 7vw;
+                    height: 7vw;
+                    background-color: $color-secondary-lightest;
+                    &-shap{
+                        @extend %shap;
+                        border: 10px solid $color-secondary-darkest;
+                    }
+                    &-persent{
+                        @extend %persent;
+                        padding: 100px;
+                        color: $color-secondary-darkest;
+                        background-color: $color-secondary-lightest;
+                    }
+                    &::before,&::after{
+                        content: "";
+                        @extend %after-before;
+                        background: conic-gradient(transparent,transparent,transparent,$color-secondary);
+                    }
+                    &::after{
+                        animation-delay: -5s;
+                    }
                 }
                 .other{
+                    // place
                     grid-column: 1/2;
                     grid-row: 3/4;
+                    align-self: center;
+                    justify-self: left;
+                    margin: 0 40px;
+                    // inside ↓
+                    @extend %shap-style;
+                    width: 7vw;
+                    height: 7vw;
+                    background-color: $color-secondary-lightest;
+                    &-shap{
+                        @extend %shap;
+                        border: 10px solid $color-secondary-darkest;
+                    }
+                    &-persent{
+                        @extend %persent;
+                        padding: 100px;
+                        color: $color-secondary-darkest;
+                        background-color: $color-secondary-lightest;
+                    }
+                    &::before,&::after{
+                        content: "";
+                        @extend %after-before;
+                        background: conic-gradient(transparent,transparent,transparent,$color-secondary);
+                    }
+                    &::after{
+                        animation-delay: -5s;
+                    }
                 }
                 .average-progress{
+                    // place
                     grid-column: 2/3;
                     grid-row: 1/4;
+                    align-self: center;
+                    justify-self: center;
+                    margin: 0 40px;
+                    // inside ↓
+                    @extend %shap-style;
+                    width: 15vw;
+                    height: 15vw;
+                    background-color: $color-secondary-lightest;
+                    &-shap{
+                        @extend %shap;
+                        border: 10px solid $color-secondary-darkest;
+                    }
+                    &-persent{
+                        @extend %persent;
+                        padding: 100px;
+                        color: $color-secondary-darkest;
+                        background-color: $color-secondary-lightest;
+                    }
+                    &::before,&::after{
+                        content: "";
+                        @extend %after-before;
+                        background: conic-gradient(transparent,transparent,transparent,$color-secondary);
+                    }
+                    &::after{
+                        animation-delay: -5s;
+                    }
                 }
             }
         }
@@ -432,7 +571,6 @@
         .skill-box{  
             position: relative;
             padding: 20px 20px;
-            border-bottom: 2px solid $color-secondary-lightest;
             .skill-hexagon{
                 @extend %hexagon;
                 padding: 35px;

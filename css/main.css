@@ -220,6 +220,45 @@ h1, h2, h3 {
   box-shadow: 0px 0px 10px #5353fe;
 }
 
+.skill-info .skill-form .skill-analysis .average-progress, .skill-info .skill-form .skill-analysis .other, .skill-info .skill-form .skill-analysis .frontend, .skill-info .skill-form .skill-analysis .backend {
+  padding: 3px;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 2px #3c5c83 inset;
+}
+
+.skill-info .skill-form .skill-analysis .average-progress-shap, .skill-info .skill-form .skill-analysis .other-shap, .skill-info .skill-form .skill-analysis .frontend-shap, .skill-info .skill-form .skill-analysis .backend-shap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.skill-info .skill-form .skill-analysis .average-progress-persent, .skill-info .skill-form .skill-analysis .other-persent, .skill-info .skill-form .skill-analysis .frontend-persent, .skill-info .skill-form .skill-analysis .backend-persent {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  mix-blend-mode: lighten;
+  font-size: 22px;
+}
+
+.skill-info .skill-form .skill-analysis .average-progress::before, .skill-info .skill-form .skill-analysis .average-progress::after, .skill-info .skill-form .skill-analysis .other::before, .skill-info .skill-form .skill-analysis .other::after, .skill-info .skill-form .skill-analysis .frontend::before, .skill-info .skill-form .skill-analysis .frontend::after, .skill-info .skill-form .skill-analysis .backend::before, .skill-info .skill-form .skill-analysis .backend::after {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  transform: rotate(0deg);
+  animation: rotate-border 10s linear infinite;
+}
+
 .skill-info .skill-box .skill-hexagon {
   /* Clip-Path Shape */
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -554,36 +593,119 @@ h1, h2, h3 {
 .skill-info .skill-form .skill-description dd {
   text-align: center;
   font-size: 14px;
-  color: #8ea9c6;
+  color: #ffffff;
   text-shadow: 0px 0px 20px #d9e3ee;
 }
 .skill-info .skill-form .skill-analysis {
   grid-column: 2/3;
   grid-row: 1/3;
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: 0.7fr 1fr;
   grid-template-rows: repeat(3, 1fr);
 }
 .skill-info .skill-form .skill-analysis .backend {
   grid-column: 1/2;
   grid-row: 1/2;
+  align-self: center;
+  justify-self: left;
+  margin: 0 40px;
+  width: 7vw;
+  height: 7vw;
+  background-color: #d9e3ee;
+}
+.skill-info .skill-form .skill-analysis .backend-shap {
+  border: 10px solid #0d233d;
+}
+.skill-info .skill-form .skill-analysis .backend-persent {
+  padding: 100px;
+  color: #0d233d;
+  background-color: #d9e3ee;
+}
+.skill-info .skill-form .skill-analysis .backend::before, .skill-info .skill-form .skill-analysis .backend::after {
+  content: "";
+  background: conic-gradient(transparent, transparent, transparent, #3c5c83);
+}
+.skill-info .skill-form .skill-analysis .backend::after {
+  animation-delay: -5s;
 }
 .skill-info .skill-form .skill-analysis .frontend {
   grid-column: 1/2;
   grid-row: 2/3;
+  align-self: center;
+  justify-self: left;
+  margin: 0 40px;
+  width: 7vw;
+  height: 7vw;
+  background-color: #d9e3ee;
+}
+.skill-info .skill-form .skill-analysis .frontend-shap {
+  border: 10px solid #0d233d;
+}
+.skill-info .skill-form .skill-analysis .frontend-persent {
+  padding: 100px;
+  color: #0d233d;
+  background-color: #d9e3ee;
+}
+.skill-info .skill-form .skill-analysis .frontend::before, .skill-info .skill-form .skill-analysis .frontend::after {
+  content: "";
+  background: conic-gradient(transparent, transparent, transparent, #3c5c83);
+}
+.skill-info .skill-form .skill-analysis .frontend::after {
+  animation-delay: -5s;
 }
 .skill-info .skill-form .skill-analysis .other {
   grid-column: 1/2;
   grid-row: 3/4;
+  align-self: center;
+  justify-self: left;
+  margin: 0 40px;
+  width: 7vw;
+  height: 7vw;
+  background-color: #d9e3ee;
+}
+.skill-info .skill-form .skill-analysis .other-shap {
+  border: 10px solid #0d233d;
+}
+.skill-info .skill-form .skill-analysis .other-persent {
+  padding: 100px;
+  color: #0d233d;
+  background-color: #d9e3ee;
+}
+.skill-info .skill-form .skill-analysis .other::before, .skill-info .skill-form .skill-analysis .other::after {
+  content: "";
+  background: conic-gradient(transparent, transparent, transparent, #3c5c83);
+}
+.skill-info .skill-form .skill-analysis .other::after {
+  animation-delay: -5s;
 }
 .skill-info .skill-form .skill-analysis .average-progress {
   grid-column: 2/3;
   grid-row: 1/4;
+  align-self: center;
+  justify-self: center;
+  margin: 0 40px;
+  width: 15vw;
+  height: 15vw;
+  background-color: #d9e3ee;
+}
+.skill-info .skill-form .skill-analysis .average-progress-shap {
+  border: 10px solid #0d233d;
+}
+.skill-info .skill-form .skill-analysis .average-progress-persent {
+  padding: 100px;
+  color: #0d233d;
+  background-color: #d9e3ee;
+}
+.skill-info .skill-form .skill-analysis .average-progress::before, .skill-info .skill-form .skill-analysis .average-progress::after {
+  content: "";
+  background: conic-gradient(transparent, transparent, transparent, #3c5c83);
+}
+.skill-info .skill-form .skill-analysis .average-progress::after {
+  animation-delay: -5s;
 }
 .skill-info .skill-box {
   position: relative;
   padding: 20px 20px;
-  border-bottom: 2px solid #d9e3ee;
 }
 .skill-info .skill-box .skill-hexagon {
   padding: 35px;
