@@ -17,6 +17,45 @@
     background-color: $color-secondary-dark;
     box-shadow: 0px 0px 10px $color-blue-lightest;
 }
+%hexagon{
+    /* Clip-Path Shape */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    // clip-path: polygon(27% 0%, 73% 0%, 100% 48%, 100% 52%, 73% 100%, 27% 100%, 0% 52%, 0% 48%);
+    // clip-path: polygon(28% 0%, 72% 0%, 76% 3%, 100% 47%, 100% 53%, 76% 97%, 72% 100%, 28% 100%, 24% 97%,0% 53%, 0% 47%,24% 3%);
+    background: radial-gradient(transparent 30%,$color-glass-hexagon 70%);
+    // border: 1px solid white;
+    box-shadow: 0px 0px 10px $color-primary-lightest inset;
+    // filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.36));
+}
+%hexagon-2{
+    .hexgon{
+        width: 100px;
+        height: 115px;
+        position: relative;
+        background: transparent;
+
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hexgon::before{
+        content: "";
+        position: absolute;
+        background: white;
+        inset: 0;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        z-index: 1;
+    }
+    .hexgon::after{
+        content: "";
+        position: absolute;
+        background: transparent;
+        inset: 3;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        z-index: -1;
+    }
+}
 // ============================================/ home == hero
 .hero{
     min-height: 86vh;
@@ -326,51 +365,204 @@
                 font-size: $font-xl;
             }
         }
+        // ===========================================/ hexagons
         .skill-box{
+            height: 480px;
+            position: relative;
             padding: 20px 20px;
             border-radius: $radius-lg;
             border: 1px solid $color-primary;
             background: $color-secondary-darkest;
             box-shadow: 0px 0px 10px $color-primary-lightest;
-            .skill-direct{
-                padding: 7px;
-                display: grid;
-                grid-template-columns: 140px 1fr 50px;
-                justify-content: space-between;
-                align-items: center;
+            .skill-hexagon{
+                @extend %hexagon;
+                padding: 35px;
                 color: $color-secondary-lightest;
-                text-shadow: 0px 0px 20px $color-blue-lightest;
-                font-size: $font-lg;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s ease;
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50% , -50%);
+                    font-size: $font-3xl;
+                    transition: 0.3s ease;
+                }
                 .skill-name{
-                    text-shadow: 0px 0px 1px $color-blue-lightest;
-                    i{
-                        color: $color-secondary-lightest;
-                        font-size: $font-2xl;
+                    position: absolute;
+                    top: -30%;
+                    left: 50%;
+                    transform: translate(-50% , -50%);
+                    font-size: $font-xl;
+                    transition: 0.5s ease;
+                }
+                &:hover{
+                    transform: scale(1.17,1.17);
+                    & > i{
+                        transform: translate(-50% , 150%);
                     }
-                    .diffrent{
-                        font-size: $font-3xl;
+                    & > .skill-name{
+                        transform: translate(-50% , 200%);
                     }
                 }
-                .skill-persent{
-                    margin: 0 auto;
-                }
-                .skill-level{
-                    width: 100%;
-                    height: 10px;
-                    border-radius: $radius-lg;
-                    border: 2px solid  $color-secondary-lightest;
-                    position: relative;
-                    &-persent{
-                        height: 7px;
-                        border: 2px solid $color-secondary-darkest;
-                        background: $color-secondary-light;
-                        border-radius: $radius-lg;
-                        transition: 0.5s ease;
+                &:nth-child(2){
+                    position: absolute;
+                    top: 54px;
+                    left: 73px;
+                    transform: translate(-1px , 1px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
                     }
-                    &:hover > .skill-level-persent{
-                        margin: 0 10px;
-                        background: $color-secondary-lightest;
-                        transform: scaleY(1.03) scaleX(1.03);
+                }
+                &:nth-child(3){
+                    position: absolute;
+                    top: 20px;
+                    left: 125px;
+                    transform: translate(-1px , 0px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(4){
+                    position: absolute;
+                    top: 54px;
+                    left: 177px;
+                    transform: translate(-1px , 1px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(5){
+                    background: $color-glass-hexagon;
+                    position: absolute;
+                    top: 20px;
+                    left: 230px;
+                    transform: translate(-2px , 0px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(6){
+                    position: absolute;
+                    top: 90px;
+                    left: 125px;
+                    transform: translate(-1px , -1px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(7){
+                    background: $color-glass-hexagon;
+                    position: absolute;
+                    top: 90px;
+                    left: 20px;
+                    transform: translate(-1px , -1px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(8){
+                    position: absolute;
+                    top: 90px;
+                    left: 230px;
+                    transform: translate(-1px , -1px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(9){
+                    background: $color-glass-hexagon;
+                    position: absolute;
+                    top: 125px;
+                    left: 175px;
+                    transform: translate(1.7px , -1px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(10){                   
+                    position: absolute;
+                    top: 125px;
+                    left: 70px;
+                    transform: translate(1.7px , -1px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(11){
+                    position: absolute;
+                    top: 160px;
+                    left: 20px;
+                    transform: translate(-1px , -2px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(12){
+                    background: $color-glass-hexagon;
+                    position: absolute;
+                    top: 160px;
+                    left: 125px;
+                    transform: translate(-1px , -2px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(13){
+                    position: absolute;
+                    top: 160px;
+                    left: 230px;
+                    transform: translate(-1px , -2px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(14){
+                    position: absolute;
+                    top: 53px;
+                    left: 280px;
+                    transform: translate(0.9px , 1.7px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(15){
+                    position: absolute;
+                    top: 125px;
+                    left: 280px;
+                    transform: translate(0.9px , -1px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(16){
+                    background: $color-glass-hexagon;
+                    position: absolute;
+                    top: 20px;
+                    left: 335px;
+                    transform: translate(-2px , 0px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(17){
+                    background: $color-glass-hexagon;
+                    position: absolute;
+                    top: 160px;
+                    left: 335px;
+                    transform: translate(-1.5px , -1.3px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
+                    }
+                }
+                &:nth-child(18){
+                    position: absolute;
+                    top: 90px;
+                    left: 335px;
+                    transform: translate(-1.5px , -1px);
+                    &:hover{
+                        transform: translate(2% , -5%) scale(1.17,1.17);
                     }
                 }
             }

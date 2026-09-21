@@ -220,6 +220,13 @@ h1, h2, h3 {
   box-shadow: 0px 0px 10px #5353fe;
 }
 
+.skill-info .skill-box .skill-hexagon {
+  /* Clip-Path Shape */
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: radial-gradient(transparent 30%, rgba(154, 181, 213, 0.2078431373) 70%);
+  box-shadow: 0px 0px 10px #ffffff inset;
+}
+
 .hero {
   min-height: 86vh;
   background: url(../images/hero-1.png) no-repeat center center/cover fixed;
@@ -511,53 +518,204 @@ h1, h2, h3 {
   font-size: 18px;
 }
 .skill-info .skill-box {
+  height: 480px;
+  position: relative;
   padding: 20px 20px;
   border-radius: 24px;
   border: 1px solid #f9f9f9;
   background: #0d233d;
   box-shadow: 0px 0px 10px #ffffff;
 }
-.skill-info .skill-box .skill-direct {
-  padding: 7px;
-  display: grid;
-  grid-template-columns: 140px 1fr 50px;
-  justify-content: space-between;
-  align-items: center;
+.skill-info .skill-box .skill-hexagon {
+  padding: 35px;
   color: #d9e3ee;
-  text-shadow: 0px 0px 20px #5353fe;
-  font-size: 16px;
-}
-.skill-info .skill-box .skill-direct .skill-name {
-  text-shadow: 0px 0px 1px #5353fe;
-}
-.skill-info .skill-box .skill-direct .skill-name i {
-  color: #d9e3ee;
-  font-size: 22px;
-}
-.skill-info .skill-box .skill-direct .skill-name .diffrent {
-  font-size: 28px;
-}
-.skill-info .skill-box .skill-direct .skill-persent {
-  margin: 0 auto;
-}
-.skill-info .skill-box .skill-direct .skill-level {
-  width: 100%;
-  height: 10px;
-  border-radius: 24px;
-  border: 2px solid #d9e3ee;
+  display: inline-block;
   position: relative;
-}
-.skill-info .skill-box .skill-direct .skill-level-persent {
-  height: 7px;
-  border: 2px solid #0d233d;
-  background: #8ea9c6;
-  border-radius: 24px;
   transition: 0.5s ease;
 }
-.skill-info .skill-box .skill-direct .skill-level:hover > .skill-level-persent {
-  margin: 0 10px;
-  background: #d9e3ee;
-  transform: scaleY(1.03) scaleX(1.03);
+.skill-info .skill-box .skill-hexagon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  transition: 0.3s ease;
+}
+.skill-info .skill-box .skill-hexagon .skill-name {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  transition: 0.5s ease;
+}
+.skill-info .skill-box .skill-hexagon:hover {
+  transform: scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:hover > i {
+  transform: translate(-50%, 150%);
+}
+.skill-info .skill-box .skill-hexagon:hover > .skill-name {
+  transform: translate(-50%, 200%);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(2) {
+  position: absolute;
+  top: 54px;
+  left: 73px;
+  transform: translate(-1px, 1px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(2):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(3) {
+  position: absolute;
+  top: 20px;
+  left: 125px;
+  transform: translate(-1px, 0px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(3):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(4) {
+  position: absolute;
+  top: 54px;
+  left: 177px;
+  transform: translate(-1px, 1px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(4):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(5) {
+  background: rgba(154, 181, 213, 0.2078431373);
+  position: absolute;
+  top: 20px;
+  left: 230px;
+  transform: translate(-2px, 0px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(5):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(6) {
+  position: absolute;
+  top: 90px;
+  left: 125px;
+  transform: translate(-1px, -1px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(6):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(7) {
+  background: rgba(154, 181, 213, 0.2078431373);
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  transform: translate(-1px, -1px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(7):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(8) {
+  position: absolute;
+  top: 90px;
+  left: 230px;
+  transform: translate(-1px, -1px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(8):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(9) {
+  background: rgba(154, 181, 213, 0.2078431373);
+  position: absolute;
+  top: 125px;
+  left: 175px;
+  transform: translate(1.7px, -1px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(9):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(10) {
+  position: absolute;
+  top: 125px;
+  left: 70px;
+  transform: translate(1.7px, -1px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(10):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(11) {
+  position: absolute;
+  top: 160px;
+  left: 20px;
+  transform: translate(-1px, -2px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(11):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(12) {
+  background: rgba(154, 181, 213, 0.2078431373);
+  position: absolute;
+  top: 160px;
+  left: 125px;
+  transform: translate(-1px, -2px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(12):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(13) {
+  position: absolute;
+  top: 160px;
+  left: 230px;
+  transform: translate(-1px, -2px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(13):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(14) {
+  position: absolute;
+  top: 53px;
+  left: 280px;
+  transform: translate(0.9px, 1.7px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(14):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(15) {
+  position: absolute;
+  top: 125px;
+  left: 280px;
+  transform: translate(0.9px, -1px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(15):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(16) {
+  background: rgba(154, 181, 213, 0.2078431373);
+  position: absolute;
+  top: 20px;
+  left: 335px;
+  transform: translate(-2px, 0px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(16):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(17) {
+  background: rgba(154, 181, 213, 0.2078431373);
+  position: absolute;
+  top: 160px;
+  left: 335px;
+  transform: translate(-1.5px, -1.3px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(17):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(18) {
+  position: absolute;
+  top: 90px;
+  left: 335px;
+  transform: translate(-1.5px, -1px);
+}
+.skill-info .skill-box .skill-hexagon:nth-child(18):hover {
+  transform: translate(2%, -5%) scale(1.17, 1.17);
 }
 
 .project {
