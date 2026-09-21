@@ -407,6 +407,25 @@
             .skill-analysis{
                 grid-column: 2/3;
                 grid-row: 1/3;
+                display: grid;
+                grid-template-columns: 0.5fr 1fr;
+                grid-template-rows: repeat(3 , 1fr);
+                .backend{
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                }
+                .frontend{
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+                .other{
+                    grid-column: 1/2;
+                    grid-row: 3/4;
+                }
+                .average-progress{
+                    grid-column: 2/3;
+                    grid-row: 1/4;
+                }
             }
         }
         // ===========================================/ hexagons
