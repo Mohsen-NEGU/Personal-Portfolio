@@ -965,6 +965,81 @@ h1, h2, h3 {
   font-size: 12px;
 }
 
+.resume {
+  background: rgb(87.188057041%, 87.7450980392%, 88.3021390374%);
+}
+.resume-title, .resume-sub-title {
+  width: 100%;
+  display: inline-block;
+  padding: 25px 5px 20px 5px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32px;
+  color: #8ea9c6;
+  text-shadow: 0px 0px 2px #3c5c83;
+}
+.resume-sub-title {
+  padding-top: 0px;
+}
+.resume-glass {
+  margin-right: 20px;
+  position: relative;
+  background: rgba(154, 182, 213, 0.3490196078);
+  border-radius: 24px;
+  box-shadow: 0px 0px 15px #8ea9c6;
+  border: 1px solid #f9f9f9;
+}
+.resume-wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  border-bottom: 2px solid #0d233d;
+}
+.resume-img {
+  padding-block: 20px;
+  width: 230px;
+  justify-self: center;
+}
+.resume-img img {
+  border-radius: 24px;
+  box-shadow: 0px 0px 5px #ffffff;
+}
+.resume-style {
+  padding-block: 20px;
+  color: #0d233d;
+  font-size: 22px;
+}
+.resume-style h2 {
+  font-size: 40px;
+  -webkit-text-stroke: 1px #0d233d;
+  color: #ffffff;
+}
+.resume-style p {
+  padding-block: 5px;
+}
+.resume-style-sotials {
+  padding-block: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.resume-style-sotials a {
+  color: #5353fe;
+  text-decoration: underline;
+}
+.resume-style-sotials a i {
+  padding-right: 10px;
+  font-size: 28px;
+  color: #0d233d;
+}
+.resume-style-sotials p {
+  color: #5353fe;
+  text-decoration: underline;
+}
+.resume-style-sotials p i {
+  padding-right: 10px;
+  font-size: 28px;
+  color: #0d233d;
+}
+
 @keyframes show-bars {
   100% {
     transform: translateY(0%);

@@ -851,6 +851,84 @@
         font-size: $font-sm;
     }
 }
+// ============================================/ resume
+.resume{
+    background:lighten($color-primary-dark, 5%);
+    &-title,
+    &-sub-title{
+        width: 100%;
+        display: inline-block;
+        padding: 25px 5px 20px 5px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: $h3-lg;
+        color: $color-secondary-light;
+        text-shadow: 0px 0px 2px $color-secondary;
+    }
+    &-sub-title{
+        padding-top: 0px;
+    }
+    &-glass{
+        margin-right: 20px;
+        position: relative;
+        background: $color-glass-bg;
+        border-radius: $radius-lg;
+        box-shadow: 0px 0px 15px $color-secondary-light;
+        border: 1px solid $color-primary;
+
+    }
+    &-wrapper{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        border-bottom: 2px solid $color-secondary-darkest;
+    }
+    &-img{
+        padding-block: 20px;
+        width: 230px;
+        justify-self: center;
+        img{
+            border-radius: $radius-lg;
+            box-shadow: 0px 0px 5px $color-primary-lightest;
+        }
+    }
+    &-style{
+        padding-block: 20px;
+        color: $color-secondary-darkest;
+        font-size: $font-2xl;
+        h2{
+            font-size: $h2-lg;
+            -webkit-text-stroke: 1px $color-secondary-darkest;
+            color: $color-primary-lightest;
+        }
+        p{
+            padding-block: 5px;
+        }
+        &-sotials{
+            padding-block: 20px;
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            a{
+                color: $color-blue-lightest;
+                text-decoration:underline;
+                i{
+                    padding-right: 10px;
+                    font-size: $font-3xl;
+                    color: $color-secondary-darkest;
+                }
+            }
+            p{
+                color: $color-blue-lightest;
+                text-decoration:underline;
+                i{
+                    padding-right: 10px;
+                    font-size: $font-3xl;
+                    color: $color-secondary-darkest;
+                }
+            }
+        }
+    }
+    
+}
 
 // ==================================| animations Keyframes |=========================================
 @keyframes show-bars{
