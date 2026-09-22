@@ -411,8 +411,8 @@
                 padding: 10px 20px;
                 font-size: $font-lg;
                 color: $color-secondary-lightest;
-                h3{
-                    font-size: $h3-sm;
+                strong{
+                    color: $color-aqua;
                 }
                 span{
                     width: 100%;
@@ -422,6 +422,7 @@
                     text-align: center;
                 }
                 dt{
+                    padding-block: 5px;
                     font-size: $font-xl;
                     color: $color-secondary-light;
                     &:first-child{
@@ -433,6 +434,10 @@
                     font-size: $font-md;
                     color:$color-primary-lightest;
                     text-shadow: 0px 0px 20px $color-secondary-lightest;
+                }
+                .back-top{
+                    color: $color-aqua;
+                    transform: translate(0 , -22px);
                 }
             }
             .skill-analysis{

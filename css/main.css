@@ -573,8 +573,8 @@ h1, h2, h3 {
   font-size: 16px;
   color: #d9e3ee;
 }
-.skill-info .skill-form .skill-description h3 {
-  font-size: 20px;
+.skill-info .skill-form .skill-description strong {
+  color: #00ffff;
 }
 .skill-info .skill-form .skill-description span {
   width: 100%;
@@ -584,6 +584,7 @@ h1, h2, h3 {
   text-align: center;
 }
 .skill-info .skill-form .skill-description dt {
+  padding-block: 5px;
   font-size: 18px;
   color: #8ea9c6;
 }
@@ -595,6 +596,10 @@ h1, h2, h3 {
   font-size: 14px;
   color: #ffffff;
   text-shadow: 0px 0px 20px #d9e3ee;
+}
+.skill-info .skill-form .skill-description .back-top {
+  color: #00ffff;
+  transform: translate(0, -22px);
 }
 .skill-info .skill-form .skill-analysis {
   grid-column: 2/3;
