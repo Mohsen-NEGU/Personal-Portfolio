@@ -996,7 +996,7 @@ h1, h2, h3 {
 }
 .resume-wrapper::after {
   content: "";
-  width: 90%;
+  width: 95%;
   height: 1px;
   background-color: #ffffff;
   position: absolute;
@@ -1053,6 +1053,40 @@ h1, h2, h3 {
   padding-right: 10px;
   font-size: 28px;
   color: #0d233d;
+}
+.resume-profile {
+  padding: 20px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #0d233d;
+}
+.resume-profile p {
+  padding-block: 5px;
+}
+.resume-profile p i {
+  padding-right: 5px;
+  font-size: 22px;
+}
+.resume-point {
+  padding: 10px 0;
+  font-size: 32px;
+  -webkit-text-stroke: 1px #0d233d;
+  color: #ffffff;
+}
+.resume-part {
+  padding: 5px 0;
+  font-size: 18px;
+}
+.resume-technical-list {
+  padding: 7px 0px 7px 20px;
+  list-style: disc;
+  border-bottom: 1px solid white;
+}
+.resume-technical-item {
+  padding: 3px 0px;
+  font-size: 16px;
 }
 
 @keyframes show-bars {

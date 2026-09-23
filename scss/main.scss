@@ -883,7 +883,7 @@
         position: relative;
         &::after{
             content: '';
-            width: 90%;
+            width: 95%;
             height: 1px;
             background-color:$color-primary-lightest;
             position: absolute;
@@ -942,7 +942,40 @@
             }
         }
     }
-    
+    &-profile{
+        padding: 20px 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: $color-secondary-darkest;
+        p{
+            padding-block: 5px;
+            i{
+                padding-right: 5px;
+                font-size: $font-2xl;
+            }
+        }
+    }
+    &-point{
+        padding: 10px 0;
+        font-size: $h3-lg;
+        -webkit-text-stroke: 1px $color-secondary-darkest;
+        color: $color-primary-lightest;
+    }
+    &-part{
+        padding: 5px 0;
+        font-size: $h4-lg;
+    }
+    &-technical-list{
+        padding: 7px 0px 7px 20px ;
+        list-style:disc;
+        border-bottom: 1px solid white;
+    }
+    &-technical-item{
+        padding: 3px 0px;
+        font-size: $font-lg;
+    }
 }
 
 // ==================================| animations Keyframes |=========================================
