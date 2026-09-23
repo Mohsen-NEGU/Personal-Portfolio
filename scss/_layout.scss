@@ -3,10 +3,15 @@
 // ========================================| Layout |============================================
 // ========================================/ header
 .header{
+    position: sticky;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 100;
     width: 100%;
     background:linear-gradient(to right ,$color-secondary-light,$color-secondary-lightest,#e0ecf8,$color-secondary-lightest,$color-secondary-light);
-    // border-radius:0px 0px 15px 15px;
     box-shadow: 0px 0px 40px $color-primary-lightest inset;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.749);
     & > .middle{
         // display: flex;
         display: grid;
