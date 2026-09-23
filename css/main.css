@@ -71,7 +71,7 @@ html {
 }
 
 section {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 70px;
 }
 
 body {
@@ -133,8 +133,18 @@ h1, h2, h3 {
   z-index: 100;
   width: 100%;
   background: linear-gradient(to right, #8ea9c6, #d9e3ee, #e0ecf8, #d9e3ee, #8ea9c6);
-  box-shadow: 0px 0px 40px #ffffff inset;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.749);
+  box-shadow: 0px 0px 40px 2px #ffffff inset;
+  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.749));
+  transition: height 0.3s ease;
+}
+.header.scrolled {
+  height: 70px;
+}
+.header.scrolled .logo {
+  transform: translate(0, -15px) scale(0.7);
+}
+.header.scrolled .menu-list {
+  transform: translate(0, -15px) scale(0.9);
 }
 .header > .middle {
   display: grid;
@@ -144,6 +154,7 @@ h1, h2, h3 {
 }
 .header > .middle .logo {
   display: flex;
+  transition: transform 0.3s ease;
 }
 .header > .middle .logo-img {
   width: 110px;
@@ -177,6 +188,7 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  transition: transform 0.3s ease;
 }
 .header > .middle .menu-item {
   font-weight: bold;

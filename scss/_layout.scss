@@ -10,8 +10,18 @@
     z-index: 100;
     width: 100%;
     background:linear-gradient(to right ,$color-secondary-light,$color-secondary-lightest,#e0ecf8,$color-secondary-lightest,$color-secondary-light);
-    box-shadow: 0px 0px 40px $color-primary-lightest inset;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.749);
+    box-shadow: 0px 0px 40px 2px $color-primary-lightest inset;
+    filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.749));
+    transition: height 0.3s ease;
+    &.scrolled{
+        height: 70px;
+        .logo{
+            transform:translate(0 , -15px) scale(0.7);
+        }
+        .menu-list{
+            transform:translate(0 , -15px) scale(0.9);
+        }
+    }
     & > .middle{
         // display: flex;
         display: grid;
@@ -20,6 +30,7 @@
         align-items: center;
         .logo{
             display: flex;
+            transition: transform 0.3s ease;
             &-img{
                 width: 110px;
                 margin: 10px;
@@ -55,6 +66,7 @@
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
+                transition: transform 0.3s ease;
             }
             &-item{
                 font-weight: bold;
