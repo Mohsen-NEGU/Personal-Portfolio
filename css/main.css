@@ -262,7 +262,7 @@ h1, h2, h3 {
 .skill-info .skill-box .skill-hexagon {
   /* Clip-Path Shape */
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  background: radial-gradient(transparent 30%, rgba(154, 181, 213, 0.2078431373) 70%);
+  background: radial-gradient(transparent 30%, rgba(173, 197, 226, 0.2078431373) 70%);
   box-shadow: 0px 0px 10px #ffffff inset;
 }
 
@@ -289,7 +289,7 @@ h1, h2, h3 {
 .hero-view {
   padding: 10px;
   width: 500px;
-  background: rgba(154, 182, 213, 0.3490196078);
+  background: rgba(154, 181, 213, 0.2117647059);
   border-radius: 24px;
   box-shadow: 0px 0px 30px #ffffff;
   display: flex;
@@ -490,9 +490,9 @@ h1, h2, h3 {
 .skill-wrapper {
   margin-right: 20px;
   position: relative;
-  background: rgba(154, 182, 213, 0.3490196078);
+  background: rgba(154, 181, 213, 0.2117647059);
   border-radius: 24px;
-  box-shadow: 0px 0px 15px #8ea9c6;
+  box-shadow: 0px 0px 15px #fcfcfc;
   border: 1px solid #f9f9f9;
 }
 .skill-wrapper .skill-img {
@@ -540,9 +540,9 @@ h1, h2, h3 {
   padding: 15px 20px;
   margin-left: 10px;
   position: relative;
-  background: rgba(154, 182, 213, 0.3490196078);
+  background: rgba(154, 181, 213, 0.2117647059);
   border-radius: 24px;
-  box-shadow: 0px 0px 15px #8ea9c6;
+  box-shadow: 0px 0px 15px #fcfcfc;
   border: 1px solid #f9f9f9;
 }
 .skill-info span {
@@ -772,7 +772,7 @@ h1, h2, h3 {
   transform: translate(2%, -5%) scale(1.17, 1.17);
 }
 .skill-info .skill-box .skill-hexagon:nth-child(5) {
-  background: rgba(154, 181, 213, 0.2078431373);
+  background: rgba(173, 197, 226, 0.2078431373);
   position: absolute;
   top: 20px;
   left: 230px;
@@ -788,7 +788,7 @@ h1, h2, h3 {
   transform: translate(2%, -5%) scale(1.17, 1.17);
 }
 .skill-info .skill-box .skill-hexagon:nth-child(7) {
-  background: rgba(154, 181, 213, 0.2078431373);
+  background: rgba(173, 197, 226, 0.2078431373);
   position: absolute;
   top: 90px;
   left: 20px;
@@ -804,7 +804,7 @@ h1, h2, h3 {
   transform: translate(2%, -5%) scale(1.17, 1.17);
 }
 .skill-info .skill-box .skill-hexagon:nth-child(9) {
-  background: rgba(154, 181, 213, 0.2078431373);
+  background: rgba(173, 197, 226, 0.2078431373);
   position: absolute;
   top: 125px;
   left: 175px;
@@ -829,7 +829,7 @@ h1, h2, h3 {
   transform: translate(2%, -5%) scale(1.17, 1.17);
 }
 .skill-info .skill-box .skill-hexagon:nth-child(12) {
-  background: rgba(154, 181, 213, 0.2078431373);
+  background: rgba(173, 197, 226, 0.2078431373);
   position: absolute;
   top: 160px;
   left: 125px;
@@ -863,14 +863,14 @@ h1, h2, h3 {
   transform: translate(2%, -5%) scale(1.17, 1.17);
 }
 .skill-info .skill-box .skill-hexagon:nth-child(16) {
-  background: rgba(154, 181, 213, 0.2078431373);
+  background: rgba(173, 197, 226, 0.2078431373);
   position: absolute;
   top: 20px;
   left: 335px;
   transform: translate(-2px, 0px);
 }
 .skill-info .skill-box .skill-hexagon:nth-child(17) {
-  background: rgba(154, 181, 213, 0.2078431373);
+  background: rgba(173, 197, 226, 0.2078431373);
   position: absolute;
   top: 160px;
   left: 335px;
@@ -927,7 +927,7 @@ h1, h2, h3 {
   left: 65%;
   font-size: 12px;
   font-family: "font-harabara";
-  background: rgba(154, 182, 213, 0.3490196078);
+  background: rgba(154, 181, 213, 0.2117647059);
   color: #ffffff;
   border-radius: 36px;
   text-shadow: 0px 0px 3px #5353fe;
@@ -941,7 +941,7 @@ h1, h2, h3 {
 .project-name {
   padding: 2px 7px;
   display: inline-block;
-  background-color: rgba(154, 182, 213, 0.3490196078);
+  background-color: rgba(154, 181, 213, 0.2117647059);
   border-radius: 36px;
   text-shadow: 0px 0px 3px #5353fe;
   box-shadow: 0px 0px 5px #5353fe;
@@ -984,27 +984,28 @@ h1, h2, h3 {
 .resume-glass {
   margin-right: 20px;
   position: relative;
-  background: rgba(154, 182, 213, 0.3490196078);
+  background: rgba(154, 181, 213, 0.2117647059);
   border-radius: 24px;
-  box-shadow: 0px 0px 15px #8ea9c6;
+  box-shadow: 0px 0px 15px #fcfcfc;
   border: 1px solid #f9f9f9;
 }
 .resume-wrapper {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
-  border-bottom: 2px solid #0d233d;
 }
 .resume-img {
-  padding-block: 20px;
+  padding-block: 40px;
+  padding-bottom: 10px;
   width: 230px;
   justify-self: center;
 }
 .resume-img img {
   border-radius: 24px;
-  box-shadow: 0px 0px 5px #ffffff;
+  box-shadow: 0px 0px 10px #3c5c83;
 }
 .resume-style {
-  padding-block: 20px;
+  padding-block: 40px;
+  padding-bottom: 10px;
   color: #0d233d;
   font-size: 22px;
 }
