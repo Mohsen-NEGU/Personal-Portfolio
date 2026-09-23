@@ -289,7 +289,7 @@ h1, h2, h3 {
 .hero-view {
   padding: 10px;
   width: 500px;
-  background: rgba(154, 181, 213, 0.2117647059);
+  background: rgba(169, 197, 231, 0.2901960784);
   border-radius: 24px;
   box-shadow: 0px 0px 30px #ffffff;
   display: flex;
@@ -490,7 +490,7 @@ h1, h2, h3 {
 .skill-wrapper {
   margin-right: 20px;
   position: relative;
-  background: rgba(154, 181, 213, 0.2117647059);
+  background: rgba(169, 197, 231, 0.2901960784);
   border-radius: 24px;
   box-shadow: 0px 0px 15px #fcfcfc;
   border: 1px solid #f9f9f9;
@@ -540,7 +540,7 @@ h1, h2, h3 {
   padding: 15px 20px;
   margin-left: 10px;
   position: relative;
-  background: rgba(154, 181, 213, 0.2117647059);
+  background: rgba(169, 197, 231, 0.2901960784);
   border-radius: 24px;
   box-shadow: 0px 0px 15px #fcfcfc;
   border: 1px solid #f9f9f9;
@@ -927,7 +927,7 @@ h1, h2, h3 {
   left: 65%;
   font-size: 12px;
   font-family: "font-harabara";
-  background: rgba(154, 181, 213, 0.2117647059);
+  background: rgba(169, 197, 231, 0.2901960784);
   color: #ffffff;
   border-radius: 36px;
   text-shadow: 0px 0px 3px #5353fe;
@@ -941,7 +941,7 @@ h1, h2, h3 {
 .project-name {
   padding: 2px 7px;
   display: inline-block;
-  background-color: rgba(154, 181, 213, 0.2117647059);
+  background-color: rgba(169, 197, 231, 0.2901960784);
   border-radius: 36px;
   text-shadow: 0px 0px 3px #5353fe;
   box-shadow: 0px 0px 5px #5353fe;
@@ -984,7 +984,7 @@ h1, h2, h3 {
 .resume-glass {
   margin-right: 20px;
   position: relative;
-  background: rgba(154, 181, 213, 0.2117647059);
+  background: rgba(169, 197, 231, 0.2901960784);
   border-radius: 24px;
   box-shadow: 0px 0px 15px #fcfcfc;
   border: 1px solid #f9f9f9;
@@ -992,20 +992,34 @@ h1, h2, h3 {
 .resume-wrapper {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
+  position: relative;
+}
+.resume-wrapper::after {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
 }
 .resume-img {
-  padding-block: 40px;
-  padding-bottom: 10px;
+  padding: 40px 0px 10px 0px;
   width: 230px;
   justify-self: center;
 }
 .resume-img img {
   border-radius: 24px;
-  box-shadow: 0px 0px 10px #3c5c83;
+  box-shadow: 0px 0px 10px #1d3858;
+  transition: 0.5s ease;
+}
+.resume-img img:hover {
+  transform: scale(1.03, 1.03);
+  box-shadow: 0px 0px 15px #3c5c83;
 }
 .resume-style {
-  padding-block: 40px;
-  padding-bottom: 10px;
+  padding: 40px 0px 10px 0px;
   color: #0d233d;
   font-size: 22px;
 }
