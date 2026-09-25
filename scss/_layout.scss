@@ -107,3 +107,68 @@
     padding: 0 15px;
     margin: 0 auto;
 }
+.footer{
+    width: 100%;
+    background:linear-gradient(to right ,$color-secondary-light,$color-secondary-lightest,#e0ecf8,$color-secondary-lightest,$color-secondary-light);
+    box-shadow: 0px 0px 40px 2px $color-primary-lightest inset;
+    &-order{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    &-logo{
+        justify-self: center;
+        display: flex;
+        &-img{
+            width: 80px;
+            margin: 0px 10px 0px 0px;
+            border: 1px solid $color-primary-lightest;
+            box-shadow: 0px 0px 15px $color-primary-lightest;
+            border-radius: $radius-sm;
+            cursor: pointer;
+        }
+        .logo-introduction{
+            align-self: center;
+            padding: 5px;
+            text-align: center;
+            &-name{
+                font-family: "font-harabara";
+                color: $color-secondary-darkest;
+                font-size: $font-2xl;
+            }
+        }
+    }
+    &-copy-right{
+        justify-self: center;
+        align-self: center;
+        font-size: $font-lg;
+    }
+    &-alevetor{
+        padding: 20px;
+        justify-self: center;
+        align-self: center;
+        position: relative;
+        border-radius: $radius-circle;
+        border: 1px solid $color-primary;
+        box-shadow: 0px 0px 10px $color-primary-lightest inset;
+        filter: drop-shadow(0 0 10px $color-border);
+        transition: 0.5s;
+        &:hover{
+            padding: 27px;
+            box-shadow: 0px 0px 10px $color-primary-lightest inset;
+            a{
+                transform: translate(-50% , -50%) scale(1.1,1.1);
+                color: $color-primary;
+                text-shadow: 0 0 10px $color-primary-lightest;
+            }
+        }
+        a{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%) scale(0.9,0.9);
+            font-size: $font-2xl;
+            color: $color-secondary-darkest;
+            transition: 0.5s;
+        }
+    }
+}

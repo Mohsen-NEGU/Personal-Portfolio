@@ -227,6 +227,72 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
+.footer {
+  width: 100%;
+  background: linear-gradient(to right, #8ea9c6, #d9e3ee, #e0ecf8, #d9e3ee, #8ea9c6);
+  box-shadow: 0px 0px 40px 2px #ffffff inset;
+}
+.footer-order {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-logo {
+  justify-self: center;
+  display: flex;
+}
+.footer-logo-img {
+  width: 80px;
+  margin: 0px 10px 0px 0px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 15px #ffffff;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.footer-logo .logo-introduction {
+  align-self: center;
+  padding: 5px;
+  text-align: center;
+}
+.footer-logo .logo-introduction-name {
+  font-family: "font-harabara";
+  color: #0d233d;
+  font-size: 22px;
+}
+.footer-copy-right {
+  justify-self: center;
+  align-self: center;
+  font-size: 16px;
+}
+.footer-alevetor {
+  padding: 20px;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid #f9f9f9;
+  box-shadow: 0px 0px 10px #ffffff inset;
+  filter: drop-shadow(0 0 10px #8caaca);
+  transition: 0.5s;
+}
+.footer-alevetor:hover {
+  padding: 27px;
+  box-shadow: 0px 0px 10px #ffffff inset;
+}
+.footer-alevetor:hover a {
+  transform: translate(-50%, -50%) scale(1.1, 1.1);
+  color: #f9f9f9;
+  text-shadow: 0 0 10px #ffffff;
+}
+.footer-alevetor a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9, 0.9);
+  font-size: 22px;
+  color: #0d233d;
+  transition: 0.5s;
+}
+
 .skill-wrapper .skill-img button, .about-btn-link, .hero-link {
   background-color: #0d233d;
   border: 1px solid #f9f9f9;
