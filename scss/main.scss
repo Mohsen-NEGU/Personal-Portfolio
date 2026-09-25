@@ -560,6 +560,18 @@
                         padding: 100px;
                         color: $color-secondary-darkest;
                         background-color: $color-secondary-lightest;
+                        &::after{
+                            content: 'Average progress';
+                            text-align: center;
+                            position: absolute;
+                            top: 70%;
+                            left: 50%;
+                            transform: translate(-50% ,-50%);
+                            border: 1px solid $color-border;
+                            border-radius: $radius-md;
+                            background-color: $color-border-darkest;
+                            color: $color-primary-lightest;
+                        }
                     }
                     &::before,&::after{
                         content: "";

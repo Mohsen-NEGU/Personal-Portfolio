@@ -789,6 +789,18 @@ h1, h2, h3 {
   color: #0d233d;
   background-color: #d9e3ee;
 }
+.skill-info .skill-form .skill-analysis .average-progress-persent::after {
+  content: "Average progress";
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #8caaca;
+  border-radius: 18px;
+  background-color: #61758a;
+  color: #ffffff;
+}
 .skill-info .skill-form .skill-analysis .average-progress::before, .skill-info .skill-form .skill-analysis .average-progress::after {
   content: "";
   background: conic-gradient(transparent, transparent, transparent, #3c5c83);
