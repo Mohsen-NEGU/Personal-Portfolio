@@ -220,6 +220,47 @@ h1, h2, h3 {
 .header > .middle .menu-link:hover::after {
   width: 100%;
 }
+.header > .middle .menu-hamburger {
+  display: none;
+  align-self: flex-end;
+  flex-direction: column;
+  gap: 8px;
+  width: max-content;
+  z-index: 100;
+  position: fixed;
+  top: 45px;
+  right: 10px;
+  cursor: pointer;
+}
+.header > .middle .menu-hamburger:has(#menu-toggle:focus-visible)::after, .header > .middle .menu-hamburger:has(#menu-toggle:focus-visible)::before, .header > .middle .menu-hamburger #menu-toggle:focus-visible {
+  border: 1px solid var(--background);
+  box-shadow: 0 0 1px var(--foreground);
+}
+.header > .middle .menu-hamburger::after, .header > .middle .menu-hamburger::before, .header > .middle .menu-hamburger #menu-toggle {
+  content: "";
+  width: 35px;
+  height: 4px;
+  background-color: #f9f9f9;
+  transition: opacity 200ms ease-in-out, width 200ms ease-in-out, transform 200ms ease-in-out;
+  transform-origin: left center;
+}
+.header > .middle .menu-hamburger:has(#menu-toggle:checked)::before {
+  transform: translate(0, -2px) rotate(45deg);
+  width: 33.32px;
+}
+.header > .middle .menu-hamburger:has(#menu-toggle:checked)::after {
+  transform: translate(0, -2px) rotate(-45deg);
+  width: 33.32px;
+}
+.header > .middle .menu-hamburger #menu-toggle:checked {
+  opacity: 0;
+  width: 0;
+}
+.header > .middle .menu-hamburger #menu-toggle {
+  appearance: none;
+  border: none;
+  pointer-events: none;
+}
 
 .middle {
   max-width: 1450px;

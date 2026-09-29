@@ -138,3 +138,11 @@ $h4-sm: 12px;
     font-weight: normal;
     font-style: normal;
 }
+
+// ======================================| for hamburger menu |======================================== 
+$bar-width: 35px;
+$bar-height: 4px;
+$hamburger-gap: 8px;
+$hamburger-margin: 9px;
+$animation-timing: 200ms ease-in-out;
+$hamburger-height: calc($bar-height * 3 + $hamburger-gap * 2);
