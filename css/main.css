@@ -1259,5 +1259,94 @@ h1, h2, h3 {
     transform: rotate(360deg);
   }
 }
+@media (min-width: 1181px) and (max-width: 1366px) {
+  .header > .middle {
+    grid-template-columns: 420px 1fr;
+  }
+  .header > .middle .logo-img {
+    width: 90px;
+  }
+  .header > .middle .logo-introduction-name {
+    font-size: 18px;
+  }
+  .header > .middle .logo-introduction-profession {
+    font-size: 16px;
+  }
+  .header > .middle .menu-link {
+    padding: 10px 12px;
+  }
+  .hero-view {
+    width: 450px;
+  }
+  .hero-description {
+    font-size: 16px;
+  }
+  .about {
+    padding: 50px 4%;
+  }
+  .about-title {
+    font-size: 32.5px;
+  }
+  .about-wrapper {
+    font-size: 26px;
+  }
+  .about-description {
+    font-size: 16px;
+  }
+  .skill .middle {
+    grid-template-columns: 320px 1fr;
+  }
+  .skill-wrapper {
+    margin-right: 15px;
+  }
+  .skill-info .skill-form {
+    grid-template-columns: 460px 1fr;
+  }
+  .skill-info .skill-form .skill-analysis .backend,
+  .skill-info .skill-form .skill-analysis .frontend,
+  .skill-info .skill-form .skill-analysis .other {
+    width: 90px;
+    height: 90px;
+    margin: 0 15px;
+  }
+  .skill-info .skill-form .skill-analysis .backend-persent,
+  .skill-info .skill-form .skill-analysis .frontend-persent,
+  .skill-info .skill-form .skill-analysis .other-persent {
+    font-size: 18px;
+  }
+  .skill-info .skill-form .skill-analysis .average-progress {
+    width: 160px;
+    height: 160px;
+    margin: 0 10px;
+  }
+  .skill-info .skill-form .skill-analysis .average-progress-persent {
+    font-size: 18px;
+  }
+  .skill-info .skill-form .skill-analysis .average-progress-persent::after {
+    font-size: 12px;
+    padding: 0 6px;
+  }
+  .project-list {
+    grid-template-columns: repeat(4, 264px);
+    justify-content: center;
+    gap: 20px;
+  }
+  .project-item {
+    width: 264px;
+    height: 280px;
+  }
+  .project-item iframe {
+    transform: scale(0.22);
+  }
+  .resume-glass {
+    margin-right: 0;
+  }
+  .resume-style {
+    font-size: 18px;
+  }
+  .resume-style h2 {
+    font-size: 32.5px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

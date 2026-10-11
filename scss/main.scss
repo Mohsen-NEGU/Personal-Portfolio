@@ -1023,3 +1023,98 @@
         transform: rotate(360deg);
     }
 }
+
+
+
+// ========================================| Laptop |========================================
+// 1181px → 1366px
+@media (min-width: 1181px) and (max-width: 1366px){
+
+    // ---------------- header
+    .header{
+        & > .middle{
+            grid-template-columns: 420px 1fr;
+            .logo{
+                &-img{ width: 90px; }
+                &-introduction{
+                    &-name{ font-size: $font-xl; }
+                    &-profession{ font-size: $font-lg; }
+                }
+            }
+            .menu{
+                &-link{ padding: 10px 12px; }
+            }
+        }
+    }
+
+    // ---------------- hero
+    .hero{
+        &-view{ width: 450px; }
+        &-description{ font-size: $font-lg; }
+    }
+
+    // ---------------- about
+    .about{
+        padding: 50px 4%;
+        &-title{ font-size: $h2-md; }
+        &-wrapper{ font-size: $h3-md; }
+        &-description{ font-size: $font-lg; }
+    }
+
+    // ---------------- skill
+    .skill{
+        .middle{ grid-template-columns: 320px 1fr; }
+        &-wrapper{ margin-right: 15px; }
+        &-info{
+            .skill-form{
+                grid-template-columns: 460px 1fr;
+                .skill-analysis{
+                    .backend,
+                    .frontend,
+                    .other{
+                        width: 90px;
+                        height: 90px;
+                        margin: 0 15px;
+                        &-persent{ font-size: $font-xl; }
+                    }
+                    .average-progress{
+                        width: 160px;
+                        height: 160px;
+                        margin: 0 10px;
+                        &-persent{
+                            font-size: $font-xl;
+                            &::after{
+                                font-size: $font-sm;
+                                padding: 0 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // ---------------- project
+    .project{
+        &-list{
+            grid-template-columns: repeat(4, 264px);
+            justify-content: center;
+            gap: 20px;
+        }
+        &-item{
+            width: 264px;
+            height: 280px;
+            iframe{ transform: scale(0.22); }
+        }
+    }
+
+    // ---------------- resume
+    .resume{
+        &-glass{ margin-right: 0; }
+        &-style{
+            font-size: $font-xl;
+            h2{ font-size: $h2-md; }
+        }
+    }
+}
+
