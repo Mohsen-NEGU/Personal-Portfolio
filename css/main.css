@@ -1348,5 +1348,223 @@ h1, h2, h3 {
     font-size: 32.5px;
   }
 }
+@media (min-width: 768px) and (max-width: 1180px) {
+  .header {
+    height: 90px;
+  }
+  .header > .middle {
+    grid-template-columns: 1fr;
+  }
+  .header > .middle .logo {
+    transform-origin: left center;
+  }
+  .header > .middle .logo-img {
+    width: 70px;
+    margin: 8px;
+  }
+  .header > .middle .logo-introduction-name {
+    font-size: 18px;
+  }
+  .header > .middle .logo-introduction-profession {
+    font-size: 16px;
+  }
+  .header > .middle .menu-hamburger {
+    display: flex;
+    top: 31px;
+    right: 20px;
+  }
+  .header > .middle .menu-hamburger::before, .header > .middle .menu-hamburger::after, .header > .middle .menu-hamburger #menu-toggle {
+    background-color: #0d233d;
+  }
+  .header > .middle .menu-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 0 15px;
+    background: #d9e3ee;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  }
+  .header > .middle .menu-item {
+    width: 100%;
+    text-align: center;
+  }
+  .header > .middle .menu-link {
+    display: block;
+    padding: 12px 15px;
+  }
+  .header.scrolled {
+    height: 70px;
+  }
+  .header.scrolled .logo {
+    transform: scale(0.8);
+  }
+  .header.scrolled .menu-list {
+    transform: translateY(-10px);
+  }
+  .header.scrolled .menu-hamburger {
+    top: 21px;
+  }
+  .header .menu:has(#menu-toggle:checked) .menu-list {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  .hero {
+    min-height: 70vh;
+    padding: 50px 0;
+    grid-template-columns: 1fr;
+    background-attachment: scroll;
+  }
+  .hero-view {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .about {
+    padding: 40px 4%;
+  }
+  .about > .middle {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .about-img {
+    order: -1;
+    justify-self: center;
+    width: 300px;
+    height: 300px;
+  }
+  .about-info {
+    align-items: center;
+    text-align: center;
+  }
+  .about-title {
+    font-size: 32.5px;
+  }
+  .about-btn {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .skill-title {
+    font-size: 26px;
+  }
+  .skill .middle {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .skill-wrapper {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .skill-wrapper .skill-img {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-right: 0;
+  }
+  .skill-info {
+    margin-left: 0;
+  }
+  .skill-info .skill-box {
+    width: 480px;
+    height: 270px;
+    margin-left: calc((100% - 385px) / 2 - 20px);
+  }
+  .skill-info .skill-form {
+    height: auto;
+    padding-bottom: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .skill-info .skill-form .skill-description {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .skill-info .skill-form .skill-analysis {
+    grid-column: 1;
+    grid-row: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 10px 0;
+  }
+  .skill-info .skill-form .skill-analysis .backend,
+  .skill-info .skill-form .skill-analysis .frontend,
+  .skill-info .skill-form .skill-analysis .other {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+  }
+  .skill-info .skill-form .skill-analysis .backend-persent,
+  .skill-info .skill-form .skill-analysis .frontend-persent,
+  .skill-info .skill-form .skill-analysis .other-persent {
+    font-size: 18px;
+  }
+  .skill-info .skill-form .skill-analysis .average-progress {
+    width: 170px;
+    height: 170px;
+    margin: 0;
+  }
+  .skill-info .skill-form .skill-analysis .average-progress-persent {
+    font-size: 18px;
+  }
+  .skill-info .skill-form .skill-analysis .average-progress-persent::after {
+    font-size: 12px;
+    padding: 0 6px;
+  }
+  .project-list {
+    grid-template-columns: repeat(2, 342px);
+    justify-content: center;
+    gap: 30px;
+  }
+  .resume-glass {
+    margin-right: 0;
+  }
+  .resume-title, .resume-sub-title {
+    font-size: 26px;
+  }
+  .resume-wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .resume-style {
+    padding: 20px 20px 10px;
+    font-size: 18px;
+  }
+  .resume-style h2 {
+    font-size: 32.5px;
+  }
+  .resume-style-sotials {
+    text-align: left;
+  }
+  .resume-style-sotials a, .resume-style-sotials p {
+    word-break: break-word;
+  }
+  .resume-profile {
+    padding: 20px 25px;
+  }
+  .footer-copy-right {
+    font-size: 14px;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

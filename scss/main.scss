@@ -1118,3 +1118,211 @@
     }
 }
 
+// ========================================| Tablet |========================================
+// 768px → 1180px
+@media (min-width: 768px) and (max-width: 1180px){
+
+    // ---------------- header + hamburger menu  (very improtant)
+    .header{
+        height: 90px;
+        & > .middle{
+            grid-template-columns: 1fr;
+            .logo{
+                transform-origin: left center;
+                &-img{ width: 70px; margin: 8px; }
+                &-introduction{
+                    &-name{ font-size: $font-xl; }
+                    &-profession{ font-size: $font-lg; }
+                }
+            }
+            .menu{
+                &-hamburger{
+                    display: flex;
+                    top: 31px;
+                    right: 20px;
+                    // hamburger bar color
+                    &::before,
+                    &::after,
+                    & #menu-toggle{
+                        background-color: $color-secondary-darkest;
+                    }
+                }
+                &-list{
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    flex-direction: column;
+                    gap: 5px;
+                    padding: 10px 0 15px;
+                    background: $color-secondary-lightest;
+                    border-radius: 0 0 $radius-md $radius-md;
+                    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                    transform: translateY(-10px);
+                    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+                }
+                &-item{ width: 100%; text-align: center; }
+                &-link{
+                    display: block;
+                    padding: 12px 15px;
+                }
+            }
+        }
+        &.scrolled{
+            height: 70px;
+            .logo{ transform: scale(0.8); }
+            .menu-list{ transform: translateY(-10px); }
+            .menu-hamburger{ top: 21px; }
+        }
+    }
+    // menu open state
+    .header .menu:has(#menu-toggle:checked) .menu-list{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    // ---------------- hero
+    .hero{
+        min-height: 70vh;
+        padding: 50px 0;
+        grid-template-columns: 1fr;
+        background-attachment: scroll;
+        &-view{
+            width: 100%;
+            max-width: 520px;
+            margin: 0 auto;
+        }
+    }
+
+    // ---------------- about
+    .about{
+        padding: 40px 4%;
+        & > .middle{
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        &-img{
+            order: -1;
+            justify-self: center;
+            width: 300px;
+            height: 300px;
+        }
+        &-info{ align-items: center; text-align: center; }
+        &-title{ font-size: $h2-md; }
+        &-btn{ flex-wrap: wrap; justify-content: center; gap: 15px; }
+    }
+
+    // ---------------- skill
+    .skill{
+        &-title{ font-size: $h3-md; }
+        .middle{
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        &-wrapper{
+            width: 100%;
+            max-width: 380px;
+            margin: 0 auto;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            .skill-img{
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                margin-right: 0;
+            }
+        }
+        &-info{
+            margin-left: 0;
+            .skill-box{
+                width: 480px;
+                height: 270px;
+                // center the hexagons
+                margin-left: calc((100% - 385px) / 2 - 20px);
+            }
+            .skill-form{
+                height: auto;
+                padding-bottom: 20px;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                .skill-description{
+                    grid-column: 1;
+                    grid-row: auto;
+                }
+                .skill-analysis{
+                    grid-column: 1;
+                    grid-row: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 25px;
+                    padding: 20px 10px 0;
+                    .backend,
+                    .frontend,
+                    .other{
+                        width: 120px;
+                        height: 120px;
+                        margin: 0;
+                        &-persent{ font-size: $font-xl; }
+                    }
+                    .average-progress{
+                        width: 170px;
+                        height: 170px;
+                        margin: 0;
+                        &-persent{
+                            font-size: $font-xl;
+                            &::after{
+                                font-size: $font-sm;
+                                padding: 0 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // ---------------- project
+    .project{
+        &-list{
+            grid-template-columns: repeat(2, 342px);
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+
+    // ---------------- resume
+    .resume{
+        &-glass{ margin-right: 0; }
+        &-title,
+        &-sub-title{ font-size: $h3-md; }
+        &-wrapper{
+            grid-template-columns: 1fr;
+            justify-items: center;
+            text-align: center;
+        }
+        &-style{
+            padding: 20px 20px 10px;
+            font-size: $font-xl;
+            h2{ font-size: $h2-md; }
+            &-sotials{
+                text-align: left;
+                a, p{ word-break: break-word; }
+            }
+        }
+        &-profile{ padding: 20px 25px; }
+    }
+
+    // ---------------- footer
+    .footer{
+        &-copy-right{ font-size: $font-md; text-align: center; }
+    }
+}
