@@ -1463,19 +1463,7 @@ h1, h2, h3 {
     gap: 30px;
   }
   .skill-wrapper {
-    width: 100%;
-    max-width: 380px;
-    margin: 0 auto;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-  }
-  .skill-wrapper .skill-img {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    margin-right: 0;
+    display: none;
   }
   .skill-info {
     margin-left: 0;
@@ -1710,22 +1698,27 @@ h1, h2, h3 {
   }
   .skill .middle {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 25px;
   }
   .skill-wrapper {
     width: 100%;
-    max-width: 380px;
     margin: 0 auto;
     padding: 20px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .skill-wrapper .skill-img {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    margin-right: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: none;
+  }
+  .skill-wrapper button {
+    top: -15px;
+    left: -14px;
   }
   .skill-info {
     padding: 15px 12px;
