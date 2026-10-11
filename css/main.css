@@ -1566,5 +1566,302 @@ h1, h2, h3 {
     text-align: center;
   }
 }
+@media (max-width: 767px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .header {
+    height: 80px;
+  }
+  .header > .middle {
+    grid-template-columns: 1fr;
+  }
+  .header > .middle .logo {
+    transform-origin: left center;
+  }
+  .header > .middle .logo-img {
+    width: 55px;
+    margin: 8px;
+  }
+  .header > .middle .logo-introduction {
+    padding: 3px;
+  }
+  .header > .middle .logo-introduction-name {
+    font-size: 16px;
+  }
+  .header > .middle .logo-introduction-profession {
+    font-size: 14px;
+  }
+  .header > .middle .menu-hamburger {
+    display: flex;
+    top: 26px;
+    right: 15px;
+  }
+  .header > .middle .menu-hamburger::before, .header > .middle .menu-hamburger::after, .header > .middle .menu-hamburger #menu-toggle {
+    background-color: #0d233d;
+  }
+  .header > .middle .menu-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 3px;
+    padding: 10px 0 15px;
+    background: #d9e3ee;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  }
+  .header > .middle .menu-item {
+    width: 100%;
+    text-align: center;
+  }
+  .header > .middle .menu-link {
+    display: block;
+    padding: 12px 15px;
+  }
+  .header.scrolled {
+    height: 60px;
+  }
+  .header.scrolled .logo {
+    transform: scale(0.85);
+  }
+  .header.scrolled .menu-list {
+    transform: translateY(-10px);
+  }
+  .header.scrolled .menu-hamburger {
+    top: 16px;
+  }
+  .header .menu:has(#menu-toggle:checked) .menu-list {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  .hero {
+    min-height: auto;
+    padding: 40px 0;
+    grid-template-columns: 1fr;
+    background-attachment: scroll;
+  }
+  .hero-view {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .hero-sub-title {
+    font-size: 18px;
+  }
+  .hero-title {
+    font-size: 30px;
+  }
+  .hero-description {
+    font-size: 16px;
+    padding-block: 12px;
+  }
+  .about {
+    padding: 30px 10px;
+  }
+  .about > .middle {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .about-img {
+    order: -1;
+    justify-self: center;
+    width: 240px;
+    height: 240px;
+  }
+  .about-info {
+    align-items: center;
+    text-align: center;
+  }
+  .about-sub-title {
+    font-size: 18px;
+  }
+  .about-title {
+    font-size: 25px;
+  }
+  .about-wrapper {
+    font-size: 20px;
+  }
+  .about-description {
+    font-size: 14px;
+  }
+  .about-btn {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .about-btn-sic {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .about-btn .sic {
+    margin: 0 8px;
+  }
+  .skill-title {
+    font-size: 26px;
+  }
+  .skill .middle {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .skill-wrapper {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .skill-wrapper .skill-img {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-right: 0;
+  }
+  .skill-info {
+    padding: 15px 12px;
+    margin-left: 0;
+  }
+  .skill-info .skill-box {
+    width: 480px;
+    height: 250px;
+    transform: scale(0.6);
+    transform-origin: top left;
+    margin-left: calc((100% - 231px) / 2 - 12px);
+    margin-bottom: -100px;
+  }
+  .skill-info .skill-form {
+    height: auto;
+    padding-bottom: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .skill-info .skill-form .skill-description {
+    grid-column: 1;
+    grid-row: auto;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  .skill-info .skill-form .skill-analysis {
+    grid-column: 1;
+    grid-row: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 15px 5px 0;
+  }
+  .skill-info .skill-form .skill-analysis .backend,
+  .skill-info .skill-form .skill-analysis .frontend,
+  .skill-info .skill-form .skill-analysis .other {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+  }
+  .skill-info .skill-form .skill-analysis .backend-persent,
+  .skill-info .skill-form .skill-analysis .frontend-persent,
+  .skill-info .skill-form .skill-analysis .other-persent {
+    font-size: 16px;
+  }
+  .skill-info .skill-form .skill-analysis .average-progress {
+    width: 140px;
+    height: 140px;
+    margin: 0;
+  }
+  .skill-info .skill-form .skill-analysis .average-progress-persent {
+    font-size: 16px;
+  }
+  .skill-info .skill-form .skill-analysis .average-progress-persent::after {
+    font-size: 11px;
+    padding: 0 5px;
+  }
+  .project {
+    padding: 40px 0;
+  }
+  .project-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 25px;
+  }
+  .project-item {
+    width: 300px;
+    height: 290px;
+  }
+  .project-item iframe {
+    transform: scale(0.25);
+  }
+  .resume-glass {
+    margin-right: 0;
+  }
+  .resume-title, .resume-sub-title {
+    font-size: 26px;
+  }
+  .resume-wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .resume-img {
+    width: 180px;
+    padding-top: 25px;
+  }
+  .resume-style {
+    padding: 20px 15px 10px;
+    font-size: 16px;
+  }
+  .resume-style h2 {
+    font-size: 25px;
+  }
+  .resume-style-sotials {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    text-align: left;
+  }
+  .resume-style-sotials a, .resume-style-sotials p {
+    word-break: break-word;
+  }
+  .resume-style-sotials a i, .resume-style-sotials p i {
+    font-size: 22px;
+  }
+  .resume-profile {
+    padding: 15px;
+  }
+  .resume-point {
+    font-size: 20px;
+  }
+  .resume-technical-item {
+    font-size: 14px;
+  }
+  .footer-order {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+    padding: 20px 0;
+  }
+  .footer-copy-right {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media (max-width: 380px) {
+  .skill-info .skill-box {
+    transform: scale(0.5);
+    margin-left: calc((100% - 192px) / 2 - 10px);
+    margin-bottom: -125px;
+  }
+  .hero-title {
+    font-size: 26px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
